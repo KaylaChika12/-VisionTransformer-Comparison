@@ -1,0 +1,62 @@
+Tools & Library yang Digunakan dalam Eksperimen
+🔹 1. Bahasa Pemrograman & Lingkungan
+- Python 3
+- Google Colab 
+- CUDA (GPU) 
+
+🔹 2. Library Machine Learning
+- PyTorch
+- torch
+- torch.nn
+- torch.utils.data.DataLoader
+
+Fungsinya untuk:
+- membangun model (via timm)
+- training loop
+- loss & optimizer
+- transfer ke GPU
+
+🔹 3. Vision Library
+- Torchvision
+- Tools untuk dataset dan transformasi:
+- torchvision.datasets.CIFAR10
+- torchvision.transforms
+
+Digunakan untuk:
+- Download dataset CIFAR-10
+- Augmentation (Resize, Crop, Flip)
+- Normalisasi (ImageNet mean/std)
+
+🔹 4. Model Pretrained
+- timm (PyTorch Image Models)
+
+Digunakan untuk memuat 2 model:
+- vit_base_patch16_224
+- swin_tiny_patch4_window7_224
+- menyediakan pretrained weights ImageNet.
+
+🔹 5. Library Evaluasi
+- scikit-learn (sklearn)
+- classification_report
+- confusion_matrix
+
+Digunakan untuk menghitung:
+- precision
+- nrecall
+- F1-score
+- confusion matrix
+
+🔹 6. Visualisasi
+- matplotlib
+Untuk plot training loss dan accuracy
+-seaborn
+Untuk plot confusion matrix (heatmap)
+- tqdm
+Progress bar pada training loop
+
+🔹 7. Python Utilities
+
+Digunakan di bagian awal kode:
+- os → simpan & ambil ukuran file model
+- time → hitung waktu inferensi
+- random, numpy → seed reproducibility
